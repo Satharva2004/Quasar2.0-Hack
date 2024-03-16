@@ -1,14 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './components/navbar';
-import Sidebar from './components/sidebase';
+import React from 'react';
+import Forms from './components/form';
+import Navbar from './components/navbar.js';
+import Sidebar from './components/sidebase.js';
+
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-    <Navbar></Navbar>
-    <Sidebar></Sidebar>
-    </>
+    <Router>
+      <Navbar></Navbar>
+      <div className="App">
+        <Sidebar />
+        <Routes>
+          <Route path="/" element={<div>Home Page</div>} />
+          <Route path="/forms" element={<Forms />} /> {/* Render Forms component */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
