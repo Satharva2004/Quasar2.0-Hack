@@ -3,13 +3,8 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Forms from './components/form';
 import Navbar from './components/navbar.js';
 import Sidebar from './components/sidebase.js';
-<<<<<<< HEAD
 import MedicalReports from './components/report.js';
-
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-=======
-import Summarizer from './components/summ.js';
->>>>>>> bac512144f4446c4f1956a274841b851b36be928
+import Summarizer from './components/summ.js';8
 
 function App() {
   return (
@@ -20,13 +15,9 @@ function App() {
         <Sidebar />
         <Routes>
           <Route path="/" element={<div>Home Page</div>} />
-<<<<<<< HEAD
-          <Route path="/forms" element={<Forms />} />
-          <Route path="/report" element={<MedicalReports />} /> {/* Render Forms component */}
-=======
           <Route path="/forms" element={<Forms />} /> {/* Render Forms component */}
           <Route path="/summarizer" element={<Summarizer/>} />
->>>>>>> bac512144f4446c4f1956a274841b851b36be928
+          <Route path="/report" element={<MedicalReports/>} />
         </Routes>
       </div>
     </Router>
