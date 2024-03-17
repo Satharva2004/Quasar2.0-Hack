@@ -44,7 +44,7 @@ export default function MedicalReports() {
     <div className="bg-gray-100 min-h-screen py-8">
       <div className="container mx-auto">
         <h1 mt={30} mb={30}>Phyiscal ➡️ Digital</h1>
-      <iframe src="https://pragnakalp-ocr-image-to-text.hf.space" class=" ml-96" width="100%"
+      <iframe src="https://atharvasawant99-ocr-testing.hf.space/" class=" ml-96" width="100%"
             height="550"></iframe>
 
 <br></br>
